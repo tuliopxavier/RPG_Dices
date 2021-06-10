@@ -1,0 +1,60 @@
+body {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 50vw;
+  height: 50vh;
+  filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.1));
+}
+
+.resultado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+  color: rgb(59, 59, 59);
+  padding: 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  text-decoration: uppercase;
+  color: white;
+  padding: 10px 20px;
+  background: rgb(0, 180, 60);
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+button:active {
+  background: rgba(255, 0, 0, 0.7);
+  animation: bounce 0.1s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}
